@@ -1,10 +1,22 @@
-package Establo;
+package Invernadero;
 
 public class Planta {
     public String especie;
     private boolean isInterior;
     String tipoFlores;
 
+/*
+importar arbol --> instanciar ---> métodos para accedeer a las propiedades
+ */
+    Arbol pino = new Arbol("Pino pinus", 80, "Atlántico");
+
+    public Arbol getPino() {
+        return pino;
+    }
+
+  public int getLongevidad(){
+        return pino.getLongevidad();
+  }
 
     public Planta(String especie, boolean isInterior, String tipoFlores) {
         this.especie = especie;
@@ -39,7 +51,7 @@ public class Planta {
 
     @Override
     public String toString() {
-        return "PLANTA \n" +
+        return "🪴 PLANTA \n" +
                 "Especie: " + especie + '\n' +
                 "Para interior: " + ((isInterior)? "Sí":"No") + '\n' +
                 "Tipo de flores: " + tipoFlores + '\n';

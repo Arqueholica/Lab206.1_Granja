@@ -1,7 +1,7 @@
-import Establo.Arbol;
-import Establo.Planta;
-import Invernadero.AnimalDomestico;
-import Invernadero.AnimalSalvaje;
+import Invernadero.Arbol;
+import Invernadero.Planta;
+import Establo.AnimalDomestico;
+import Establo.AnimalSalvaje;
 
 
 public class Main {
@@ -12,6 +12,8 @@ public class Main {
         System.out.println(Austen.getTitle());
         System.out.println(Austen.getISBN());
         System.out.println(Austen.getPrice());
+
+        System.out.println("\nLibro completo: \n ");
         System.out.println(Austen);
 
         System.out.println("\n ------- PARTE 2: EL INVERNADERO -------------- \n");
@@ -22,6 +24,11 @@ public class Main {
         Planta potus = new Planta( "Potus poti", true, "No tiene");
 
         System.out.println(potus);
+
+        System.out.println(potus.getPino());
+        System.out.println(potus.getLongevidad());
+
+
 
         System.out.println("\n ------- PARTE 2.1: LA GRANJA -------------- \n");
 

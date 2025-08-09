@@ -1,4 +1,4 @@
-package Invernadero;
+package Establo;
 
 public class AnimalSalvaje extends Animales {
     private String habitat;

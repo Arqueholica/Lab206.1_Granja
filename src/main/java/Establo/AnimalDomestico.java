@@ -1,4 +1,4 @@
-package Invernadero;
+package Establo;
 
 public class AnimalDomestico extends  Animales{
     private boolean isCouchPotato;

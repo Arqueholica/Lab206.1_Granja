@@ -1,4 +1,4 @@
-package Establo;
+package Invernadero;
 
 public class Arbol {
 
@@ -38,7 +38,7 @@ public class Arbol {
 
     @Override
     public String toString() {
-        return "ÁRBOL \n" +
+        return "🌵 ÁRBOL \n" +
                 "Especie: " + especie + '\n' +
                 "Longevidad: " + longevidad + " años" + '\n' +
                 "Clima: " + clima + '\n';

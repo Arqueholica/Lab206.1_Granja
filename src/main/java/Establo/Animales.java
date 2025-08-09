@@ -1,4 +1,4 @@
-package Invernadero;
+package Establo;
 
 abstract class Animales {
 protected String especie;
