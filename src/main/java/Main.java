@@ -1,7 +1,8 @@
 import Establo.Arbol;
 import Establo.Planta;
+import Invernadero.AnimalDomestico;
+import Invernadero.AnimalSalvaje;
 
-import java.awt.print.Book;
 
 public class Main {
     public static void main(String[] args) {
@@ -11,8 +12,9 @@ public class Main {
         System.out.println(Austen.getTitle());
         System.out.println(Austen.getISBN());
         System.out.println(Austen.getPrice());
+        System.out.println(Austen);
 
-        System.out.println("\n ------- PARTE 2: LA GRANJA -------------- \n");
+        System.out.println("\n ------- PARTE 2: EL INVERNADERO -------------- \n");
         Arbol encina =new Arbol("Encina encinae", 20, "Mediterraneo");
 
         System.out.println(encina);
@@ -20,6 +22,29 @@ public class Main {
         Planta potus = new Planta( "Potus poti", true, "No tiene");
 
         System.out.println(potus);
+
+        System.out.println("\n ------- PARTE 2.1: LA GRANJA -------------- \n");
+
+        AnimalSalvaje bufalo = new AnimalSalvaje("Bubalus bubalis - 'Búfalo'", 4, "Ecosistemas con abundante agua", false);
+
+        System.out.println(bufalo);
+
+        System.out.println(bufalo.getNumPatas());
+        System.out.println(bufalo.getHabitat());
+        System.out.println();
+
+        AnimalDomestico perro = new AnimalDomestico("Canis lupus familiaris - 'Perro'", 4, true, "Indiana", "Beagle");
+
+        System.out.println(perro);
+
+        System.out.println(perro.isCouchPotato());
+        System.out.println(perro.getNumPatas());
+        System.out.println();
+
+        perro.setCouchPotato(false);
+        perro.setNumPatas(7);
+
+        System.out.println(perro);
 
 
 

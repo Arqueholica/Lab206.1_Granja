@@ -32,4 +32,13 @@ public class Libro {
     public void setPrice(double price) {
         this.price = price;
     }
+
+    @Override
+    public String toString() {
+        return "📖 LIBRO" + '\n' +
+                "Título: " + title + '\n' +
+                "ISBN: " + ISBN +  '\n' +
+                "Precio: " + price +  '\n' +
+                "------------";
+    }
 }
